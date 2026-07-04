@@ -1,4 +1,47 @@
-<h1>Announcement Bar</h1>
+<section class="announcement_bar bg-[#000000] text-white">
+  <div class="container flex justify-between items-center py-2">
+    <div class="social_icon hidden md:block">
+      <ul class="flex gap-2">
+        <li>
+          <a href="http://"><i class="fa-brands fa-x-twitter"></i></a>
+        </li>
+        <li>
+          <a href="http://"><i class="fa-brands fa-facebook"></i></a>
+        </li>
+        <li>
+          <a href="http://"><i class="fa-brands fa-instagram"></i></a>
+        </li>
+        <li>
+          <a href="http://"><i class="fa-brands fa-tiktok"></i></a>
+        </li>
+        <li>
+          <a href="http://"><i class="fa-brands fa-linkedin"></i></a>
+        </li>
+      </ul>
+    </div>
+    <div class="announcement w-full md:w-6/12">
+      <div class="announcement_carousal">
+        {% for item in (1..4) %}
+          <p class="font_bg">Free Delivery on orders over £120. Dont miss discount.</p>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="localication hidden md:flex items-center gap-3">
+        <select class="px-3 py-2 text-sm">
+          <option>English</option>
+          <option>France</option>
+          <option>Denmark</option>
+        </select>
+
+        <select class="px-3 py-2 text-sm">
+          <option>USD $</option>
+          <option>EUR €</option>
+          <option>GBP £</option>
+          <option>BDT ৳</option>
+        </select>
+      </div>
+  </div>
+</section>
 
 {% schema %}
 {

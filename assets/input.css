@@ -10,26 +10,18 @@ input[type="password"] {
   @apply focus:outline-none;
 }
 
-html svg {
-  @apply text-[#339C00] transition-all duration-300;
-}
-
-html.dark svg {
-  @apply text-white transition-all duration-300;
-}
-
-html.dark svg:hover {
-  @apply text-[#339C00] transition-all duration-300;
-}
-
-html.dark body {
-  @apply bg-[#333333] transition-all duration-300;
-}
-
 body {
   @apply text-base;
 }
 
 @custom-variant dark (&:where(.dark, .dark *));
+
+.announcement_carousal{
+  @apply flex text-center items-center
+}
+
+option{
+  @apply bg-black !rounded-md
+}
 
 /* npx @tailwindcss/cli -i ./assets/input.css -o ./assets/tailwind.css --watch */

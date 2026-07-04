@@ -10,22 +10,3 @@ body {
 /* =========================
    COLORS (Background / Text)
 ========================= */
-.bg_primary {
-  background-color: #339c00;
-}
-
-.bg_secondary {
-  background-color: #dffbdc;
-}
-
-.bg_dark {
-  background-color: #333333;
-}
-
-.text_primary {
-  color: #339c00;
-}
-
-.text_secondary {
-  color: #dffbdc;
-}

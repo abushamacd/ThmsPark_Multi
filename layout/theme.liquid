@@ -11,6 +11,12 @@
     {% comment %} Slick Carousal {% endcomment %}
     <script src="{{ 'slick.min.js' | asset_url }}" defer></script>
 
+    {% comment %} Font {% endcomment %}
+    {{ 'font.css' | asset_url | stylesheet_tag }}
+
+    {% comment %} Font Awesome {% endcomment %}
+    {{ 'fontawesome.min.css' | asset_url | stylesheet_tag }}
+
     {% comment %} Slick Theme CSS {% endcomment %}
     {{ 'slick.css' | asset_url | stylesheet_tag }}
 
@@ -26,6 +32,9 @@
     {% sections 'header-group' %}
     {{ content_for_layout }}
     {% sections 'footer-group' %}
+
+    {% comment %} Font Awesome {% endcomment %}
+    <script async src="{{'fontawesome.min.js' |  asset_url }}"></script>
 
     {% comment %} Main {% endcomment %}
     <script async src="{{'main.js' |  asset_url }}"></script>
